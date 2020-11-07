@@ -1,0 +1,4 @@
+ID,Answer,Date,Time
+{{range .Answers -}}
+{{ .ID }},{{ .FullName }},{{ .Choice}},{{ DateFmt .DateTime }},{{ TimeFmt .DateTime }}
+{{end}}
